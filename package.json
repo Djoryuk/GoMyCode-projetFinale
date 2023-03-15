@@ -1,0 +1,45 @@
+{
+  "name": "ai",
+  "version": "1.0.0",
+  "description": "web app for chat gpt",
+  "main": " server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "start": "node server.js",
+    "client": "npm start --prefix ./client",
+    "serve": "concurrently \"npm run server\" \" npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djoryuk/Ai-chatbot.git"
+  },
+  "author": "Abdeldjallil boudekhana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Djoryuk/Ai-chatbot/issues"
+  },
+  "homepage": "https://github.com/Djoryuk/Ai-chatbot#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.13",
+    "@mui/styled-engine-sc": "^5.11.11",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "concurrently": "^7.6.0",
+    "cookie": "^0.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.21",
+    "openai": "^3.2.1",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.9"
+  }
+}
