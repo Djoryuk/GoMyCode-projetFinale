@@ -1,6 +1,6 @@
 
 import './App.css';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Redirect} from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { useMemo } from "react";
 import { themeSettings } from './theme';
@@ -25,7 +25,8 @@ function App() {
       <Navbar/>
       <Toaster/>
       <Routes>
-        <Route path='/' element={<Homepage/>}/>
+
+        <Route path='/' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/summary' element={<Summary/>}/>
@@ -33,11 +34,10 @@ function App() {
         <Route path='/chatbot' element={<ChatBot/>}/>
         <Route path='/js-Converter' element={<JsConverter/>}/>
         <Route path="/scifi-image" element={<ScifiImage />} />
+        <Route path="/Home" element={<Homepage />} />
         </Routes>
-
       </ThemeProvider>
       </>
- 
 );
 }
 
