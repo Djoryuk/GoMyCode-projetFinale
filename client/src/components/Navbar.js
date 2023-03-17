@@ -35,22 +35,21 @@ const Navbar = () => {
       <img src={IMG} alt="Logo" />
       </Typography>
       {
-        loggedIn ? (
+        !loggedIn ? (
           <>
-          <NavLink to="/Home" p={1}>
-            Home
-          </NavLink>
-            <NavLink to="/" onClick={handleLogout} p={1}>
-              Logout
+ 
+
+            <NavLink to="/register" p={1}>
+              register
             </NavLink>
           </>
         ) : (
           <>
-            <NavLink to="/register" p={1}>
-              Sign Up
+          <NavLink to="/" onClick={handleLogout} p={1}>
+              Logout
             </NavLink>
-            <NavLink to="/login" p={1}>
-              Sign In
+            <NavLink to="/Home" p={1}>
+              Home
             </NavLink>
           </>
         )}
